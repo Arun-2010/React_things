@@ -63,3 +63,50 @@ export default Card
 
 prop warning :A message from React about props being used incorrectly or missing.
 Fragments let you return multiple elements from a component without adding extra nodes to the DOM.(<> </>)
+
+
+
+
+
+state management :-
+
+In simple terms:
+
+👉 State management in React means handling and sharing data (state) across different parts of your app so that the UI always shows the correct, updated information.
+
+Example:
+Imagine you have a shopping cart.
+
+The state is the number of items in the cart.
+
+When you add/remove an item, the state changes.
+
+State management makes sure that:
+
+The cart icon updates with the new number.
+
+The checkout page shows the correct items.
+
+All components see the same updated data.
+
+Without state management:
+Data can get messy if multiple components try to handle it separately.
+
+With state management:
+Data flows in a controlled way → easier to update, debug, and scale.
+
+🔑 In React, state can be managed using:
+
+useState, useReducer → for local state (inside one component).
+
+Context API, Redux, Zustand, Recoil, etc. → for global state (shared across many components).
+
+
+const ans2=useState({name:'arun'})
+    console.log(ans2)
+    console.log(ans2[0])
+    console.log(ans2[1])
+
+ans2[0] → { name: 'arun' }
+
+ans2[1] → function to update the state (called setState)
