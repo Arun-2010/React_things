@@ -110,3 +110,31 @@ const ans2=useState({name:'arun'})
 ans2[0] → { name: 'arun' }
 
 ans2[1] → function to update the state (called setState)
+
+
+
+
+
+In React, props (short for properties) are a way to pass data from one component to another — usually from a parent component to a child component.
+
+import React from 'react'
+
+function Props({text ,colour}) {
+  return (
+    <button className={`${colour} px-3 p-1 text-white m-5`}>{text}</button>
+  )
+}
+
+export default Props
+
+
+function App() {
+  
+  return (
+    <div>
+      <Props  text="go" colour="bg-green-500"/>
+      <Props  text="stop" colour="bg-red-500"/>
+    </div>
+
+  )
+}
