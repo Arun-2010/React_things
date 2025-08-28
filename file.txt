@@ -174,3 +174,59 @@ function Formhandle() {
 }
 
 export default Formhandle
+
+
+
+
+2. usestateimport React, { useState } from 'react'
+
+function Formhandle() {
+
+
+   const [val,Setvall] = useState({name:""});
+
+
+   const handler=(event)=>{
+    event.preventDefault();
+    console.log(val);
+   }
+
+
+
+  return (
+    <div className='p-4'>
+        <form action="" onSubmit={handler}>
+            <input  onChange={(event)=>Setvall({...val,name:event.target.value})}     type="text" placeholder="Enter your name" />
+            <input  onChange={(event)=>Setvall({...val,age:event.target.value})}     type="number" placeholder="Enter your age" />
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+  )
+}
+
+export default Formhandle
+
+
+
+3.hooks
+
+import React from 'react'
+import { useForm } from 'react-hook-form'
+
+function Formhandle() {
+
+    const { register, handleSubmit } = useForm();
+  return (
+    <div className='p-4'>
+        <form action="" onSubmit={handleSubmit((data) => console.log(data))}>
+            <input  {...register("name")} type="text"  placeholder='name'/>
+            <input {...register('age')} type="age"  placeholder='age'/>
+            <input type="submit" />
+
+        </form>
+    </div>
+  )
+}
+
+export default Formhandle
