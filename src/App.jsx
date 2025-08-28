@@ -5,6 +5,7 @@ import Statehook from './components/Statehook'
 import Props from './components/Props'
 import Prop from './components/Prop'
 import Navbar from './Navbar'
+import Formhandle from './components/Formhandle'  
 
 // function App() {
 //   const data=[
@@ -27,14 +28,11 @@ import Navbar from './Navbar'
 // export default App
 
 
+
 function App() {
   return (
-    <div className='w-full h-screen bg-zinc-300 '>
-       <Navbar />
-        <div className='px-20 flex gap-10  mt-10 flex-wrap'>
-        <Prop />
-        </div>
-        
+    <div>
+      <Formhandle />
     </div>
   )
 }
