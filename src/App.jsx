@@ -1,11 +1,21 @@
 import React from 'react'
-import Card from './Card'
-import State from './components/State'
-import Statehook from './components/Statehook'
-import Props from './components/Props'
-import Prop from './components/Prop'
-import Navbar from './Navbar'
-import Formhandle from './components/Formhandle'  
+import { Link, Route, Routes } from 'react-router-dom'
+import Home from './components/Home'
+import About from './components/About'
+import User from './components/User'
+import Nav from './components/Nav'
+import Routing from './utils/Routing'
+// import Card from './Card'
+// import State from './components/State'
+// import Statehook from './components/Statehook'
+// import Props from './components/Props'
+// import Prop from './components/Prop'
+// import Navbar from './Navbar'
+// import Formhandle from './components/Formhandle'  
+// import CArd from './components/CArd'
+// import CArds from './components/CArds'
+// import Form from './components/Form'
+
 
 // function App() {
 //   const data=[
@@ -31,9 +41,17 @@ import Formhandle from './components/Formhandle'
 
 function App() {
   return (
-    <div>
-      <Formhandle />
-    </div>
+
+    <>
+
+     <Nav />
+
+
+   <Routing />
+
+    
+    </>
+    
   )
 }
 
