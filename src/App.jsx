@@ -5,6 +5,7 @@ import About from './components/About'
 import User from './components/User'
 import Nav from './components/Nav'
 import Routing from './utils/Routing'
+import Api from './components/Api'
 // import Card from './Card'
 // import State from './components/State'
 // import Statehook from './components/Statehook'
@@ -43,13 +44,8 @@ function App() {
   return (
 
     <>
+      <Api />
 
-     <Nav />
-
-
-   <Routing />
-
-    
     </>
     
   )
